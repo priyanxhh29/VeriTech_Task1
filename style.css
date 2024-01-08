@@ -22,17 +22,18 @@ html ,body {
 }
 .container h1 {
   margin: 20px 0;
+  padding: 20px;
   text-align: center;
   margin-bottom: 20px;
   font-size: 3rem;
   color: #333333;  
 }
- .container p {    
-  padding: 20px 50px;
+ .CompanyMsg {    
+  padding: 20px 60px;
   text-align: center;
   color: #333333; 
   font-size: 1.2rem;
-  font-weight: 300; 
+  font-weight: 400; 
  }
  .sub-heading{
   display: flex;
@@ -125,13 +126,14 @@ img {
   filter: grayscale(0%);
 }
  .card figcaption {
+  
   position: absolute;
-  bottom: 30%;
+  bottom: 10%;
   left: 10%;
   width: 80%;
   height: 5%;
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 500;
   color:#f4f4f4;
   opacity: 0;
   border-radius: 0 0 10px 10px;
@@ -150,12 +152,15 @@ img {
   margin-top: 5px;
   margin-bottom: 10px;
   height: 30%;
-  width: 100%;
+  width: 80%;
   color: white;
   font-size: 0.9rem;
   text-align: center;
-  padding: 20px;
+
   
+}
+.card:hover p{
+  display: none;
 }
 
 .dev-team .sub-container .card p{
