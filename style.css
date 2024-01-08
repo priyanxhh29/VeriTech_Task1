@@ -1,0 +1,167 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+html ,body {
+  background-color: #f4f4f4;
+  color: #292D33;
+}
+.container {
+  height: 100%;
+  max-width: 100%;
+  padding: 20px 0;
+}
+.container h1 {
+  margin: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #333333;  
+}
+ .container p {    
+  padding: 20px 50px;
+  text-align: center;
+  color: #333333; 
+  font-size: 1.2rem;
+  font-weight: 300; 
+ }
+ .sub-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+ }
+ .sub-heading h3{
+  background-color: #292D33;
+  color: #f4f4f4;
+  margin: 10px auto;
+  font-size: 1.3rem;
+  text-wrap: nowrap;
+  text-align: center; 
+  padding: 10px;
+  border-radius: 10px;
+ }
+ h4 {
+  font-size: 1.1rem;
+  text-align: center; 
+  padding: 10px;
+  margin-bottom: 20px;
+ }
+img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.sub-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  
+}
+.top-team {  
+  background-color: #292D33;
+  color: #ffffff;
+  padding: 40px 50px;
+}
+.top-team .card {
+  width: 40%;
+}
+.dev-team {
+  padding: 20px 50px;
+  color: #292D33;
+}
+.dev-team .card {
+  width: 25%;
+}
+.sales-team{
+  padding: 20px 50px;
+  background-color: #292D33;
+  color: #f4f4f4;
+}
+.sales-team .card {
+  width: 20%;
+}
+
+ .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden; 
+  
+}
+
+
+.card img {
+  height: 70%;
+  width: 90%;
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+  transition:0.3s;
+}
+
+.card:hover img {
+  filter: grayscale(0%);
+}
+ .card figcaption {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  width: 80%;
+  height: 5%;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color:#f4f4f4;
+  opacity: 0;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0% , rgba(255,255,255,0)100%);
+  transition: 0..3s;
+  
+}
+
+.card:hover figcaption {
+  opacity: 1;
+  text-align: center;
+  transform: scale(1.03);
+  background-color: rgba(128, 128, 128, 0.383);
+}
+.card p{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 30%;
+  width: 100%;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.dev-team .sub-container .card p{
+  color: #292D33;
+}
+
+
+
+ 
